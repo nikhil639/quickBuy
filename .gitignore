@@ -1,0 +1,33 @@
+# Maven
+target/
+*.jar
+*.war
+*.ear
+*.class
+*.iml
+
+# Spring Boot
+*.log
+logs/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.settings/
+.classpath
+.project
+.factorypath
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Claude Code memory — local only
+.claude/
+
+# Env / secrets — never commit real credentials
+.env
+*.env
+application-prod.yml
+application-secret.yml
