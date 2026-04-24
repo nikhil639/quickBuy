@@ -40,7 +40,7 @@ public class JwtUtil {
                 .claim("email", email)
                 .claim("role", role)
                 .claim("authorities", List.of("ROLE_" + role))
-                .signWith(secretKey)
+                .signWith(secretKey, Jwts.SIG.HS256)
                 .compact();
     }
 }
